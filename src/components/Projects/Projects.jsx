@@ -26,9 +26,9 @@ const Projects = () => {
     <section id="projects">
       <Container>
         <div className="project-wrapper">
-          <Title title="Projects" />
+          <Title title="Projets" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, info3, info4, info5, url, repo, img, id } = project;
 
             return (
               <Row key={id}>
@@ -48,16 +48,33 @@ const Projects = () => {
                             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                         </p>
                         <p className="mb-4">{info2 || ''}</p>
+                        <p className="mb-4">{info3 || ''}</p>
+                        <p className="mb-4">{info4 || ''}</p>
+                        {info5 && (
+                          <a href={info5}><p className="mb-4">Article</p></a>
+                        )}
                       </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        See Live
-                      </a>
-
+                      {url && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--hero"
+                          href={url || '#!'}
+                        >
+                          Voir en direct
+                        </a>
+                      )}
+                      {!url && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--hero--disable"
+                          href={url || '#!'}
+                          disabled="disabled"
+                        >
+                          Voir en direct
+                        </a>
+                      )}
                       {repo && (
                         <a
                           target="_blank"
@@ -65,7 +82,7 @@ const Projects = () => {
                           className="cta-btn text-color-main"
                           href={repo}
                         >
-                          Source Code
+                          Code Source
                         </a>
                       )}
                     </div>
@@ -81,7 +98,7 @@ const Projects = () => {
                   >
                     <div className="project-wrapper__image">
                       <a
-                        href={url || '#!'}
+                        href={url || repo || '#!'}
                         target="_blank"
                         aria-label="Project Link"
                         rel="noopener noreferrer"
@@ -99,7 +116,7 @@ const Projects = () => {
                             easing: 'cubic-bezier(.03,.98,.52,.99)',
                           }}
                         >
-                          <div data-tilt className="thumbnail rounded">
+                          <div data-tilt >
                             <ProjectImg alt={title} filename={img} />
                           </div>
                         </Tilt>

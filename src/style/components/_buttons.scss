@@ -21,6 +21,24 @@
   }
 }
 
+.cta-btn--hero--disable {
+  pointer-events: none;
+  background-image: linear-gradient(135deg, rgb(133, 133, 133) 0%, rgb(133, 133, 133) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(135deg, rgb(133, 133, 133) 0%, rgb(133, 133, 133) 100%);
+  border-image-slice: 1;
+  cursor: pointer;
+  // Responsive Button hero style
+  @include respond(phone) {
+    background-image: none;
+    border: 2px solid $secondary-color;
+    -webkit-text-fill-color: $secondary-color;
+  }
+}
+
 /* Hero Style */
 .cta-btn--hero {
   background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
