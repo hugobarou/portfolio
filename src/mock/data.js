@@ -18,9 +18,10 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: "Je suis un étudiant de l'École de technologie supérieure en génie logiciel à Montréal. En 2021, j'ai complété ma technique en informatique de gestion au Collège de Rosemont. Durant mes études et mes projets fait dans mes temps libres, j'ai acquis plusieurs connaissances qui sont utiles pour un développeur Full Stack.",
-  paragraphTwo: "",
-  paragraphThree: "",
+  paragraphOne:
+    "Je suis un étudiant à l'École de technologie supérieure en génie logiciel à Montréal. En hiver 2021, j'ai complété ma technique en informatique au Collège de Rosemont. Durant mes études et mes projets informatiques, j'ai acquis plusieurs connaissances dans le domaine de la programmation.",
+  paragraphTwo: 'Il me fait plaisir de vous présenter mes projets.',
+  paragraphThree: '',
   resume: '', // if no resume, the button will not show up
 };
 
@@ -30,11 +31,12 @@ export const projectsData = [
     id: nanoid(),
     img: 'progression.png',
     title: 'Progression',
-    info: 'Progression est un logiciel libre qui vise à être intégré à la plateforme Moodle afin de permettre aux enseignants de suivre la progression de leurs étudiants sur les exercices qu’ils auront créés pour leurs cours.',
-    info2: "Cette application permet de compiler et d’exécuter le code transmis par l’étudiant pour un exercice donné, puis de comparer les résultats obtenus aux résultats attendus.",
-    info3: "Ma contribution à Progression c'est fait dans le cadre d'un stage où j’ai pu pratiquer plusieurs méthodes de travail et appliquer les normes de la programmation.",
-    info4: '#Docker #Lumen #Vue.js #PHPUnit #PHP',
-    info5: 'https://ameqenligne.com/share/64428/article/education/niveau/Coll%C3%A9gial/2/885951/Un-exerciseur-de-programmation-en-developpement-au-College-de-Rosemont-grace-au-programme-NovaScience-.html',
+    info: 'Cette application est un logiciel libre qui permet de compiler et d’exécuter le code transmis par un étudiant pour un exercice donné, puis de comparer les résultats obtenus aux résultats attendus.',
+    info2:
+      "Ma contribution à Progression s'est faite dans le cadre d'un stage où j’ai pu pratiquer plusieurs méthodes de travail.",
+    info3: '#Docker #Lumen #Vue.js #PHPUnit #PHP #H-2021',
+    info5:
+      'https://ameqenligne.com/share/64428/article/education/niveau/Coll%C3%A9gial/2/885951/Un-exerciseur-de-programmation-en-developpement-au-College-de-Rosemont-grace-au-programme-NovaScience-.html',
     url: 'https://progression.dti.crosemont.quebec/dev/#/',
     repo: 'https://git.dti.crosemont.quebec/progression', // if no repo, the button will not show up
   },
@@ -42,10 +44,10 @@ export const projectsData = [
     id: nanoid(),
     img: 'drive.gif',
     title: 'Drive App',
-    info: "Une application sur android qui utilise un API pour transmettre les fichiers d'un utilisateur à leur drive personnel.",
-    info2: "Le back end permet de décoder les fichiers et de les sauvegarder dans le répertoire demandé par l'utilisateur.",
-    info3: 'Développer avec Android Studio comme project de session au Collège de Rosemont.',
-    info4: '#Node.js #MongoDB #JavaScript #Java #JWT',
+    info: "Cette application sur Android utilise un API pour transmettre les fichiers d'un utilisateur à leur drive personnel.",
+    info2:
+      "Le backend permet de décoder les fichiers et de les sauvegarder dans le répertoire demandé par l'utilisateur.",
+    info4: '#Node.js #MongoDB #JavaScript #Java #H-2021',
     info5: '',
     url: '',
     repo: 'https://github.com/hugobarou/drive-app', // if no repo, the button will not show up
@@ -54,10 +56,12 @@ export const projectsData = [
     id: nanoid(),
     img: 'echange.png',
     title: 'Échange de services',
-    info: 'Un projet dont le concept a été basé sur les applications connues comme UberEats, Postmate ou DoorDash.',
-    info2: "Son objectif principal est de facilité la communication et la recherche de petit service proposé proche de chez vous.",
-    info3: "J’ai pu appliquer et pratiquer les méthodes Agiles et Scrum durant le développement de l'application.",
-    info4: '#MySQL #React.js #Node.js #JavaScript',
+    info: 'Le concept de ce projet est basé sur les applications connues comme UberEats, Postmate ou DoorDash.',
+    info2:
+      'Son objectif principal est de faciliter la communication et la recherche de petits services proposés proche de chez vous.',
+    info3:
+      "J’ai appliqué et pratiqué les méthodes Agiles et Scrum durant le développement de l'application.",
+    info4: '#MySQL #React.js #Node.js #Express.js #JavaScript #A-2020',
     info5: '',
     url: '',
     repo: 'https://gitlab.com/hugobarou/echange-de-services', // if no repo, the button will not show up
@@ -66,9 +70,9 @@ export const projectsData = [
     id: nanoid(),
     img: 'favoris.png',
     title: 'Favoris',
-    info: "Une simple application web pour la gestion des favoris d'un utilisateur.",
-    info2: 'Développer avec Visual Studio comme projet de session au Collège de Rosemont.',
-    info3: '#ASP.NET #MySQL #C#',
+    info: "Une application web pour la gestion des favoris d'un utilisateur.",
+    info2: 'Développée avec Visual Studio comme projet de session au Collège de Rosemont.',
+    info3: '#ASP.NET #MySQL #C# #A-2020',
     info4: '',
     info5: '',
     url: '',
@@ -80,7 +84,7 @@ export const projectsData = [
 export const contactData = {
   tel: '',
   btn: '',
-  email: 'hugo.barou@hotmail.com',
+  email: 'hugo.barou.1@ens.etsmtl.ca',
 };
 
 // FOOTER DATA

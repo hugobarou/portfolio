@@ -30,7 +30,7 @@ const AboutImg = ({ filename, alt }) => (
       if (!image) return null;
 
       const imageFixed = image.node.childImageSharp.fixed;
-      return <img alt={alt} src={profile} className={"rounded shadow-lg"} style={{width: '350px'}} />;
+      return <img alt={alt} src={profile} className={"rounded-circle shadow-lg"} style={{width: '350px'}} />;
     }}
   />
 );
